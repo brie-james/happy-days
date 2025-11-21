@@ -25,7 +25,7 @@ function loadData() {
     });
 
   // WeatherAPI (replace YOUR_API_KEY)
-  fetch("https://api.weatherapi.com/v1/current.json?key=YOUR_API_KEY&q=Wellington")
+  fetch("https://api.weatherapi.com/v1/current.json?key=fb957b63d1914eed80031712252111&q=Wellington")
     .then(res => res.json())
     .then(data => {
       document.getElementById("weather").innerText =
@@ -34,3 +34,4 @@ function loadData() {
 }
 
 loadData(); // Load on page start
+
