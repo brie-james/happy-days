@@ -15,8 +15,7 @@ function loadData() {
       document.getElementById("dog-img").src = data.message;
     });
 
-  // Open-Meteo API for Wellington
-
+  // Weather API for Wellington
 fetch("https://api.weatherapi.com/v1/current.json?key=fb957b63d1914eed80031712252111&q=Wellington")
   .then(res => res.json())
   .then(data => {
@@ -26,5 +25,6 @@ fetch("https://api.weatherapi.com/v1/current.json?key=fb957b63d1914eed8003171225
 }
 
 loadData(); // Load on page start
+
 
 
