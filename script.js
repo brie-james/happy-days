@@ -16,7 +16,7 @@ function loadData() {
     });
 
   // Open-Meteo API for Wellington
-  fetch("https://api.open-meteo.com/v1/forecast?latitude=-41.2865&longitude=174.7762&current_weather=true")
+  fetch("https://api.open-meteo.com/v1/forecast?latitude=-41.2865&longitude=174.7762&current_weather=true&timezone=auto")
     .then(res => res.json())
     .then(data => {
       const weather = data.current_weather;
@@ -26,3 +26,4 @@ function loadData() {
 }
 
 loadData(); // Load on page start
+
