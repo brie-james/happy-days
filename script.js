@@ -15,12 +15,13 @@ function loadData() {
       document.getElementById("dog-img").src = data.message;
     });
 
-  // Weather API (replace YOUR_API_KEY)
-  fetch("https://api.openweathermap.org/data/2.5/weather?q=Wellington&appid=YOUR_API_KEY&units=metric")
+  // Open-Meteo API for Wellington
+  fetch("https://api.open-meteo.com/v1/forecast?latitude=-41.2865&longitude=174.7762&current_weather=true")
     .then(res => res.json())
     .then(data => {
+      const weather = data.current_weather;
       document.getElementById("weather").innerText =
-        `Weather in ${data.name}: ${data.main.temp}°C, ${data.weather[0].description}`;
+        `Wellington: ${weather.temperature}°C, Wind ${weather.windspeed} km/h`;
     });
 }
 
