@@ -1,17 +1,22 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Happy Dashboard</title>
-  <link rel="stylesheet" href="style.css">
+  <!-- Google Font: Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  style.css
 </head>
 <body>
-  <h1>Happy Dashboard</h1>
-  <div id="weather">Loading weather...</div>
-  <div id="joke">Loading joke...</div>
-  <img id="dog-img" alt="Random Dog" width="300">
-  <br><br>
-  <button onclick="loadData()">Refresh</button>
-  <script src="script.js"></script>
+  <div class="overlay">
+    <h1>Happy Dashboard</h1>
+    <div class="card" id="weather">Loading weather...</div>
+    <div class="card" id="joke">Loading joke...</div>
+    <img id="dog-img" alt="Random Dog" width="300">
+    <br><br>
+    <button onclick="loadData()">Refresh</button>
+  </div>
+  script.js</script>
 </body>
 </html>
