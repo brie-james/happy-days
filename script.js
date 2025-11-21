@@ -16,14 +16,15 @@ function loadData() {
     });
 
   // Open-Meteo API for Wellington
-  fetch("https://api.open-meteo.com/v1/forecast?latitude=-41.2865&longitude=174.7762&current_weather=true&timezone=auto")
-    .then(res => res.json())
-    .then(data => {
-      const weather = data.current_weather;
-      document.getElementById("weather").innerText =
-        `Wellington: ${weather.temperature}°C, Wind ${weather.windspeed} km/h`;
-    });
+
+fetch("https://api.weatherapi.com/v1/current.json?key=fb957b63d1914eed80031712252111&q=Wellington")
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById("weather").innerText =
+      `Wellington: ${data.current.temp_c}°C, ${data.current.condition.text}`;
+  });
 }
 
 loadData(); // Load on page start
+
 
