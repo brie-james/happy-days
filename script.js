@@ -5,7 +5,6 @@ function setBackground() {
       document.body.style.backgroundImage = `url(${response.url})`;
     });
 }
-
 function loadData() {
   setBackground();
 
@@ -34,4 +33,3 @@ function loadData() {
 }
 
 loadData(); // Load on page start
-
