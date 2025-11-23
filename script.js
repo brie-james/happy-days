@@ -1,13 +1,4 @@
-function setBackground() {
-  // Unsplash random image
-  fetch("https://source.unsplash.com/random/1600x900/?nature,landscape")
-    .then(response => {
-      document.body.style.backgroundImage = `url(${response.url})`;
-    });
-}
 function loadData() {
-  setBackground();
-
   // Joke API
   fetch("https://v2.jokeapi.dev/joke/Programming")
     .then(res => res.json())
