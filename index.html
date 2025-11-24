@@ -1,21 +1,27 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happiness dashboard</title>
+  <title>Knowledge Dashboard</title>
   <!-- Google Font: Montserrat -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
- </head>
+  https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap
+  style.css
+</head>
 <body>
   <div class="overlay">
-    <h1>Brie's happiness dashboard</h1>
-    <div class="card" id="weather">Loading weather...</div>
-    <div class="card" id="joke">Loading joke...</div>
-    <img id="dog-img" alt="Random Dog" width="300">
+    <h1>Knowledge Dashboard</h1>
+    <div class="card" id="advice">Loading advice...</div>
+    <div class="card" id="nasa">
+      <h2>NASA Image of the Day</h2>
+      <img id="nasa-img" alt="NASA Image" width="300">
+      <p id="nasa-title"></p>
+    </div>
+    <div class="card" id="stats">Loading NZ Stats...</div>
     <br><br>
     <button onclick="loadData()">Refresh</button>
   </div>
- </script>
+  script.js</script>
 </body>
 </html>
