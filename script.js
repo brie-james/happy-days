@@ -14,4 +14,4 @@ function loadData() {
     });
 }
 
-loadData(); // Load on page start
+(); // Load on page start
