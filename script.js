@@ -1,9 +1,10 @@
 function loadData() {
-  // Advice Slip API
-  fetch("https://api.adviceslip.com/advice")
+  // Joke API
+  fetch("https://v2.jokeapi.dev/joke/Programming")
     .then(res => res.json())
     .then(data => {
-      document.getElementById("advice").innerText = `Advice: ${data.slip.advice}`;
+      const joke = data.type === "single" ? data.joke : `${data.setup} - ${data.delivery}`;
+      document.getElementById("joke").innerText = joke;
     });
 
   // Dog API
@@ -14,4 +15,4 @@ function loadData() {
     });
 }
 
-loadData();
+loadData(); // Load on page start
