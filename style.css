@@ -3,3 +3,16 @@ body {
   text-align: center;
   margin: 20px;
 }
+#joke {
+  margin: 20px;
+  font-size: 18px;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+img {
+  margin-top: 20px;
+  border-radius: 8px;
+}
