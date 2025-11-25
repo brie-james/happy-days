@@ -9,7 +9,8 @@ function loadData() {
   // Cat Fact API
   fetch("https://catfact.ninja/fact")
     .then(res => res.json())
-   ElementById("cat-fact").innerText = data.fact;
+    .then(data => {
+      document.getElementById("cat-fact").innerText = data.fact;
     });
 }
 
